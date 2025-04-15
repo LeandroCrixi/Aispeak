@@ -1,0 +1,10 @@
+.btn{
+    background-color: var(--color-p2);
+    color: var(--color-0);
+    width: 100%;
+    display: inline-block;
+    padding: 10px 40px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 20px;
+}

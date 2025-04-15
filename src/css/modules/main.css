@@ -1,0 +1,173 @@
+/* phone container */
+.phone {
+    width: 400px;
+    height: 800px;
+    background: var(--color-p1);
+    padding: 30px 15px;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* list of features */
+ul,
+h2 {
+    padding-top: 40px;
+    align-content: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 0px 0px 15px 30px;
+}
+
+ul li::before {
+    position: absolute;
+    left: 15px;
+    content: '✔';
+    color: var(--color-p1);
+    background-color: var(--color-p2);
+    text-align: center;
+    align-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+/* Plan selection */
+.mejor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--color-p2);
+    color: var(--color-0);
+    width: fit-content;
+    height: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    top: 365px;
+    right: 40px;
+    z-index: 1;
+}
+
+form div {
+    padding: 20px;
+    margin: 20px 0px;
+    background: var(--color-0);
+    border-radius: 20px;
+    position: relative;
+}
+
+form label {
+    text-transform: uppercase;
+}
+
+form label, form p {
+    padding-left: 50px;
+}
+
+form p {
+    padding-top: 15px;
+}
+
+form .blue{
+    color: var(--color-p2);
+}
+
+form input {
+    position: absolute;
+    top: 15px;
+}
+
+form input[type="radio"] {
+    background-color: var(--color-0);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px;
+}
+
+form div:has(input:checked) {
+    background-color: #c4d3f8;
+    border: 1px solid var(--color-p2);
+}
+
+/* toggle button for free try out */
+.toggle {
+    display: flex;
+}
+
+.toggle p {
+    width: 300px;
+}
+
+.switch {
+    padding-left: 30px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 1px;
+    bottom: 4px;
+    background-color: var(--color-0);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--color-p2);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--color-p2);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Terms and conditions */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--color-p2);
+}
+
+.footer span {
+    padding: 0px 10px;
+}
